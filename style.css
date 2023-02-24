@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff;
+}
+
+/* Topo da Página */
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #604829;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.img-logo {
+    width: 80px;
+}
+
+nav a {
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #c4a47c;
+    transition: ease-in 0.2s;
+}
+
+
+
+/* Containers somente com textos*/
+.text-container {
+    padding: 80px 0px;
+    text-align: center;
+}
+
+.text-container h2 {
+    color: #c4a47c;
+    font-family: 'Oswald', sans-serif;  
+    letter-spacing: 1px;
+    font-size: 24px;
+    padding-bottom: 2.2rem;
+}
+
+.text-container p {
+    color: #666;
+    font-family: 'Lato', sans-serif;
+    line-height: 32px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 0 20px;
+}
+
+/* Aplicando o efeito parallax em todas bg */
+.banner-parallax1,
+.banner-parallax2,
+.banner-parallax3,
+.banner-parallax4,
+.banner-parallax5 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Parallax 1 */
+.banner-parallax1 {
+    background-image: url(./assets/parallax-imagem1.png);
+    height: 100vh;
+}
+
+.banner-parallax1 h1 {
+    position: absolute;
+    top: 45%;
+    right: 0;
+    left: 0;
+
+    font-family: 'Fraunces', serif;
+    color: #fff;
+    font-size: 100px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Parallax 2 */
+.banner-parallax2 {
+    background-image: url(./assets/parallax-imagem2.jpg);
+    height: 50vh;
+}
+
+.banner-parallax2 h3 {
+    position: absolute;
+    top: 45%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 500px;
+
+    font-family: 'Fraunces', serif;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+    font-style: italic;
+
+    letter-spacing: 2px;
+    background-color: #604829;
+    padding: 10px 10px;
+}
+
+/* Parallax 3 */
+.banner-parallax3 {
+    background-image: url(./assets/parallax-imagem3.jpg);
+    height: 50vh;
+}
+
+.banner-parallax3 h3 {
+    position: absolute;
+    top: 45%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 500px;
+
+    font-family: 'Fraunces', serif;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+    font-style: italic;
+
+    letter-spacing: 2px;
+    background-color: #604829;
+    padding: 10px 10px;
+}
+
+/* Parallax 4 */
+.banner-parallax4 {
+    background-image: url(./assets/parallax-imagem4.png);
+    height: 100vh;
+}
+
+.banner-parallax4 h2 {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 500px;
+
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+
+    letter-spacing: 1px;
+    background-color: #604829;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.banner-parallax4 iframe {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    left: 0;
+
+    margin: auto;
+    border-radius: 5px;
+}
+
+.contacts {
+    position: absolute;
+    top: 80%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 500px;
+
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+
+    background-color: #604829;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.contacts p {
+    padding: 5px 0;
+}
+
+/* Parallax 5 */
+.banner-parallax5 {
+    background-image: url(./assets/cafeteria.jpg);
+    height: 100vh;
+}
+
+.banner-parallax5 h2 {
+    position: absolute;
+    top: 17%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 500px;
+
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+
+    letter-spacing: 6px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Horários de Funcionamento */
+.time-list {
+    text-transform: uppercase;
+    color: #fff;
+    max-width: 768px;
+
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+
+    font-family: "Oswald", sans-serif;
+    list-style: none;
+    padding-bottom: 50px;
+}
+
+.time-list li {
+    position: relative;
+}
+
+.time-list h3 {
+    margin-bottom: 20px;
+
+    text-align: left;
+    color: #fff;
+}
+
+.time-list li div {
+    width: 70%;
+    height: 1px;
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+
+    background-color: #ACACAC;
+}
+
+.time-list li p,
+.brown-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+}
+
+.time-list li p {
+    color: #ACACAC;
+    text-align: center;
+}
+
+.brown-text {
+    padding-left: 15px;
+    color: #c4a47c;
+    text-align: left;
+}
+
+/* Rodapé */
+.container-footer {
+    position: relative;
+    padding: 20px 0;
+
+    font-weight: 500;
+    text-align: center;
+
+    background-color: #604829;
+    color: #fff;
+}
+
+.container-footer span {
+    color: #c4a47c;
+}
+
+.container-footer a {
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+
+    background-image: url("./assets/seta-para-cima.png");
+    background-position: center;
+    background-size: cover;
+    background-color: #c4a47c;
+
+    border-radius: 5px;
+}
